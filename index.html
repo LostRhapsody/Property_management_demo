@@ -87,11 +87,11 @@
                             class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600"
                         >
                             <svg
+                                x-show="!open"
                                 class="h-6 w-6 fill-current"
                                 viewBox="0 0 24 24"
                             >
                                 <path
-                                    x-show="!open"
                                     fill-rule="evenodd"
                                     clip-rule="evenodd"
                                     d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z"
@@ -102,6 +102,15 @@
                                     clip-rule="evenodd"
                                     d="M6 18L18 6M6 6l12 12"
                                 ></path>
+                            </svg>
+                            <svg
+                                x-show="open"
+                                class="h-6 w-6 fill-current"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                                />
                             </svg>
                         </button>
                         <div
@@ -132,7 +141,7 @@
         <main>
             <section
                 id="home"
-                class="relative bg-gradient-to-r from-blue-500 to-blue-700 text-white py-40"
+                class="relative bg-gradient-to-r from-blue-500 to-blue-700 text-white pt-20 pb-40 md:py-40"
             >
                 <div class="absolute inset-0 z-0">
                     <img
@@ -146,7 +155,7 @@
                     <img
                         src="static/logo_white_text.webp"
                         alt="Generic Property Management Logo"
-                        class="mx-auto w-1/4 h-auto pb-8"
+                        class="mx-auto w-1/2 md:w-1/4 h-auto pb-8"
                     />
                     <h1 class="text-4xl md:text-6xl font-bold mb-4">
                         Property Management in North Bay
