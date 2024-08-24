@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "tailwind": "^4.0.0"
+  },
+  "dependencies": {
+    "alpinejs": "^3.14.1"
+  }
+}
